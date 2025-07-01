@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteGamerBrasil</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+    <h1>Seja Bem Vindo!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+  <img src="imagens/logo.png" alt="Logo Gamer" width="120">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+        <li class="nav-item"><a class="nav-link" href="#novidades">Novidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section id="carrossel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagens/banner1.PNG" alt="Promoção 1">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/banner2.PNG" alt="Promoção 2">
+    </div>
+    <div class="carousel-item">
+      <img src="imagens/banner3.PNG" alt="Promoção 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+<section id="destaques" class="container py-5">
+    <h2 class="text-center mb-4"><i class="bi bi-stars"></i> Produtos em Destaque</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 shadow">
+                <img src="imagens/jogo1.jpeg" class="card-img-top" alt="jogo1">
+                <div class="card-body">
+                    <h5 class="card-title">Tetris Remastered</h5>
+                    <p class="card-text">Tetris Jogo | Mídia Digital</p>
+                    <p class="text-danger fw-bold">R$ 99,99</p>
+                    <button class="btn btn-primary btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow">
+                <img src="imagens/jogo2.jpeg" class="card-img-top" alt="Pacman">
+                <div class="card-body">
+                    <h5 class="card-title">Pacman Remastered</h5>
+                    <p class="card-text">Pacman Jogo | Mídia Digital</p>
+                    <p class="text-danger fw-bold">R$ 199,90</p>
+                    <button class="btn btn-primary btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow">
+                <img src="imagens/jogo3.jpeg" class="card-img-top" alt="mainicrafiti">
+                <div class="card-body">
+                    <h5 class="card-title">Minecraft 2</h5>
+                    <p class="card-text">Sandbox | Mídia Física</p>
+                    <p class="text-danger fw-bold">R$ 249,90</p>
+                    <button class="btn btn-primary btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="novidades" class="container py-5">
+  <h2 class="text-center mb-4">🎮 Novidades da Loja</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p class="lead">
+        Confira os novos lançamentos da semana! Novos jogos retrô, consoles e acessórios estão disponíveis com frete grátis e bônus especiais.
+      </p>
+      <button class="btn btn-outline-light" id="verMais">Ver mais novidades</button>
+    </div>
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Novidade em Destaque" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="galeria" class="container py-5">
+  <h2 class="text-center mb-4">🖼️ Galeria com outros produtos</h2>
+  <div class="row g-4">
+    <div class="col-6 col-md-4">
+      <img src="imagens/galeria1.jpeg" class="img-fluid rounded shadow-sm galeria-img" alt="Produto 1">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="imagens/galeria2.jpeg" class="img-fluid rounded shadow-sm galeria-img" alt="Produto 2">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="imagens/galeira3.jpeg" class="img-fluid rounded shadow-sm galeria-img" alt="Produto 3">
+    </div>
+  </div>
+</section>
+<footer class="bg-black text-white text-center py-4">
+  <p>&copy; 2025 SiteGamerBrasil - Todos os direitos reservados</p>
+  <p>
+    <a href="mailto:contato@gamerbrasil.com" class="text-light">contato@gamerbrasil.com</a>
+  </p>
+</footer>
+</body>
+</html>
